@@ -4,18 +4,12 @@ namespace DesignPatterns\ChainOfResponsibility;
 
 abstract class AbstractHandler
 {
-    private $next;
+    protected $next;
 
-    public function __construct($next)
+    public function __construct($next = null)
     {
         $this->next = $next;
     }
 
-
-    public function getNext()
-    {
-        return $this->next;
-    }
-
-    abstract public function handle($request);
+    abstract public function handleRequest($request);
 }

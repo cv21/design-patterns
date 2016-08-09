@@ -4,12 +4,16 @@ namespace DesignPatterns\ChainOfResponsibility;
 
 class FirstHandler extends AbstractHandler
 {
-    public function handle($request)
+    public function handleRequest($request)
     {
-        if (isset($request)) {
-            // process data
+        // process data if it needs
+        if (isset($request['data'])) {
+            echo sprintf("%s: %s\n", __CLASS__, $request['data']);
         }
 
-        $this->getNext()->handle($request);
+        // pass request to next handler
+        if ($this->next instanceof AbstractHandler) {
+            $this->next->handleRequest($request);
+        }
     }
 }
