@@ -8,9 +8,3 @@ Set of Design Patterns
 ```php
 $ php _exec.php
 ```
-
-### go
-
-```golang
-$ go run main.go
-```
