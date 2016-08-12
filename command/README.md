@@ -16,3 +16,8 @@ Encapsulates a request allowing it to be treated as an object. This allows the r
 * Invoker
 * AbstractCommand
 * ConcreteCommands
+* 
+
+Optionally:
+
+* Request
