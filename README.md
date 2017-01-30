@@ -8,3 +8,6 @@ Set of Design Patterns
 ```php
 $ php _exec.php
 ```
+
+Interesting 
+https://nixsolutions.github.io/design-patterns/
